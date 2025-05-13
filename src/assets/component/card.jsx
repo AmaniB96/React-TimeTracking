@@ -8,7 +8,6 @@ import iconSelfcare from '../images/icon-self-care.svg'
 
 
 export default function Card({donnee, timeframe}) {
-// background: url("../images/icon-work.svg");
 
     const backgroundColors = {
         'Work': 'hsl(15, 100%, 70%)',      
