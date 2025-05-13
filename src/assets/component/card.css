@@ -1,0 +1,19 @@
+#card {
+    height: 180px;
+    width: 220px;
+    border-radius: 15px;
+    background-color: hsl(235, 46%, 20%);
+    position: relative;
+    z-index: 2;
+}
+
+#sousCard {
+    height: 180px;
+    width: 220px;
+    border-radius: 15px;
+    background-color: white;
+    position: absolute;
+    top: 268px;
+    left: 658px;
+    z-index: 1;
+}
