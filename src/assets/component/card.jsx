@@ -1,18 +1,18 @@
 import './card.css'
 
-export default function Card() {
+
+export default function Card({title}) {
     
 
     return (
         <>
-        <div id="sousCard">
-            <img src="" alt="" />
-        </div>
 
         <div id="card">
-            <div className=''></div>
-            <div className=''></div>
-            <div className=''></div>
+            <div id="sousCard">
+                <p>{title}</p> 
+            </div>
+            
+
         </div>
         </>
     )
