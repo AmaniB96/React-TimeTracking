@@ -2,13 +2,12 @@
     height: 180px;
     width: 220px;
     border-radius: 15px;
-    background-color: white;
     position: relative;
     z-index: 2;
     color: white;
 }
 
-#sousCard {
+.sousCard {
     height: 180px;
     width: 220px;
     border-radius: 15px;
@@ -17,4 +16,7 @@
     top: 40px;
     left: 0;
     z-index: 1;
+   
 }
+
+
