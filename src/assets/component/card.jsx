@@ -1,4 +1,10 @@
 import './card.css'
+import iconWork from '../images/icon-work.svg'
+import iconPlay from '../images/icon-play.svg'
+import iconStudy from '../images/icon-study.svg'
+import iconExercise from '../images/icon-exercise.svg'
+import iconSocial from '../images/icon-social.svg'
+import iconSelfcare from '../images/icon-self-care.svg'
 
 
 export default function Card({donnee, timeframe}) {
@@ -14,19 +20,19 @@ export default function Card({donnee, timeframe}) {
     }
 
     const backgroundImages = {
-        'Work': 'url("../images/icon-work.svg")',      
-        'Play': 'url("../images/icon-play.svg")',      
-        'Study': 'url("../images/icon-study.svg)',    
-        'Exercise': 'url("../images/icon-exercise.svg)',  
-        'Social': 'url("../images/icon-social.svg)',   
-        'Self Care': 'url("../images/icon-self-care.svg)'   
+        'Work': `url("${iconWork}")`,      
+        'Play': `url("${iconPlay}")`,      
+        'Study': `url("${iconStudy}")`,    
+        'Exercise': `url("${iconExercise}")`,  
+        'Social': `url("${iconSocial}")`,   
+        'Self Care': `url("${iconSelfcare}")`   
     }
 
     const cardStyle = {
         backgroundColor: backgroundColors[donnee.title],
         backgroundImage: backgroundImages[donnee.title],
         backgroundRepeat: 'no-repeat',
-        backgroundPosition: '90% -10%',
+        backgroundPosition: '90% 0%',
         backgroundSize: '30%'
     }
 
