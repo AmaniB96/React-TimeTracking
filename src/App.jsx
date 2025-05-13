@@ -7,15 +7,25 @@ import { useState } from 'react'
 function App() {
   const[timeframe,setTimeframe] = useState('daily')
 
+  const toggleDaily = () => {
+    setTimeframe('daily')
+  }
+
   const toggleWeekly = () => {
     setTimeframe('weekly')
+  }
+
+  const toggleMonthly = () => {
+    setTimeframe('monthly')
   }
 
   return (
     <>
     <div className='section1'>
       <div className='bigcard'>
-        <button id="toggle" onClick={toggleWeekly}>Weekly</button>
+        <a id="toggle" onClick={toggleDaily}>Daily</a>
+        <a id="toggle" onClick={toggleWeekly}>Weekly</a>
+        <a id="toggle" onClick={toggleMonthly}>Monthly</a>
       </div>
 
       <div className="card-container">
