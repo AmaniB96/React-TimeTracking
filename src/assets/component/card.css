@@ -21,6 +21,9 @@
     justify-content: space-around;
     align-items: flex-start;
     padding: 20px;
+    cursor: pointer;
 }
 
-
+.sousCard:hover{
+    background-color: hsl(236, 44%, 33%);
+}
