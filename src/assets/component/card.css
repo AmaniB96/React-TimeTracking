@@ -27,3 +27,14 @@
 .sousCard:hover{
     background-color: hsl(236, 44%, 33%);
 }
+
+#ellipsis {
+ position: absolute;
+ right: 18px;
+ top: 38px;
+ scale: 0.8
+}
+
+.temps {
+    font-size: 30pt;
+}

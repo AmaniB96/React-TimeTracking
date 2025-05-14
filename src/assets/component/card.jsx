@@ -5,7 +5,7 @@ import iconStudy from '../images/icon-study.svg'
 import iconExercise from '../images/icon-exercise.svg'
 import iconSocial from '../images/icon-social.svg'
 import iconSelfcare from '../images/icon-self-care.svg'
-
+import ellipsis from '../images/icon-ellipsis.svg'
 
 export default function Card({donnee, timeframe}) {
 
@@ -40,8 +40,8 @@ export default function Card({donnee, timeframe}) {
 
         <div id="card" style= {cardStyle}>
             <div className="sousCard">
-                <p>{donnee.title}</p>
-                <h2>{donnee.timeframes[timeframe].current} hrs</h2>
+                <p>{donnee.title} <img id='ellipsis' src={ellipsis} alt="" /></p>
+                <h2 className='temps'>{donnee.timeframes[timeframe].current} hrs</h2>
                 <p>Last week - {donnee.timeframes[timeframe].previous} hrs</p>
             </div>
         </div>
