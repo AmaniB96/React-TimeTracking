@@ -38,3 +38,36 @@
 .temps {
     font-size: 30pt;
 }
+
+@media screen and (max-width: 768px) {
+    #card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .sousCard {
+        width: 100%;
+    }
+
+    .temps {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #card {
+        height: 160px;
+    }
+
+    .sousCard {
+        height: 160px;
+    }
+
+    .temps {
+        font-size: 1.8rem;
+    }
+
+    #ellipsis {
+        top: 25px;
+    }
+}

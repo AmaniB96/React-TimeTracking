@@ -8,7 +8,7 @@
 }
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,11 +28,11 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
   flex: 1;
-  max-height: 450px;  /* Increased to accommodate the gap */
+  max-height: 450px;
   justify-content: center;
-  align-items: flex-start;  /* Changed from center to flex-start */
-  row-gap: 3rem;  /* Added specific row gap */
-  column-gap: 2rem;  /* Maintain existing column gap */
+  align-items: flex-start;
+  row-gap: 3rem;
+  column-gap: 2rem;
 }
 
 .bigcard {
@@ -95,4 +95,85 @@ body {
 
 #toggle:hover {
   color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+    .section1 {
+        width: 90vw;
+        gap: 1.5rem;
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+
+    .section1 {
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+    }
+
+    .profile-cont{
+      width: 100%;
+      height: 220px;
+    }
+    
+    .bigcardhead {
+      height: 150px;
+      width: 100%;
+      display: flex;
+    }
+
+    .card-container {
+        height: 70%;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bigcard {
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100px;
+        padding: 1rem;
+    }
+
+    #toggle {
+      width: 60px;
+    }
+
+    .text {
+      scale:0.7;
+      width: 300px;
+    }
+
+    .bigcardhead p {
+      font-size: 18pt;
+    }
+
+    .pp {
+      width: auto;
+      scale: 0.9;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .section1 {
+        padding: 1rem;
+    }
+
+    #card {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .sousCard {
+        padding: 1.5rem;
+    }
 }
