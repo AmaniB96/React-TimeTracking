@@ -29,10 +29,10 @@
 }
 
 #ellipsis {
- position: absolute;
- right: 18px;
- top: 38px;
- scale: 0.8
+    position: absolute;
+    right: 18px;
+    top: 38px;
+    scale: 0.8
 }
 
 .temps {

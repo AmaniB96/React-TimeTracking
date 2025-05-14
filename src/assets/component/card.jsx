@@ -35,14 +35,26 @@ export default function Card({donnee, timeframe}) {
         backgroundSize: '30%'
     }
 
+    const getTimePeriodText = () => {
+        switch(timeframe) {
+            case 'daily':
+                return 'Yesterday';
+            case 'weekly':
+                return 'Last Week';
+            case 'monthly':
+                return 'Last Month';
+            default:
+                return 'Last Week';
+        }
+    }
+
     return (
         <>
-
-        <div id="card" style= {cardStyle}>
+        <div id="card" style={cardStyle}>
             <div className="sousCard">
                 <p>{donnee.title} <img id='ellipsis' src={ellipsis} alt="" /></p>
                 <h2 className='temps'>{donnee.timeframes[timeframe].current} hrs</h2>
-                <p>Last week - {donnee.timeframes[timeframe].previous} hrs</p>
+                <p>{getTimePeriodText()} - {donnee.timeframes[timeframe].previous} hrs</p>
             </div>
         </div>
         </>
